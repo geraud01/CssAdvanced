@@ -15,6 +15,12 @@ h1 {
     width: 100%;
 }
 
+h2 {
+    color: $color-font;
+    text-align: left;
+    width: 100%;
+}
+
 .container {
     display: block;
     max-width: 1200px;
@@ -25,4 +31,40 @@ h1 {
         height: auto;
     }
 
+}
+
+
+%box{
+
+    display: flex;
+    background: $color-bg-default;
+    border-radius: 1rem;
+}
+
+.box-container {
+    @extend %box;
+    flex-direction: row;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.box {
+    border-radius: 1rem;
+    border: 2px solid $color-font;
+    text-align: center;
+    //margin: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.box-container2 {
+    @extend %box;
+    flex-direction: row;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
 }
