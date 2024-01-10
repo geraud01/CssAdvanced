@@ -14,13 +14,17 @@ body {
 }
 
 h1 {
-    color: $color-font;
+    color: #000;
     text-align: center;
     margin-top: 4rem;
 }
 
 h2 {
     margin-top: 4rem;
+}
+
+p{
+    text-align: left;
 }
 
 header,
@@ -36,6 +40,7 @@ footer {
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
+    text-align: center;
 }
 
 #sobre {
@@ -43,6 +48,7 @@ footer {
 }
 
 #produtos {
+    text-align: center;
 
 }
 
