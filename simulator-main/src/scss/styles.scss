@@ -2,6 +2,11 @@ $color-font: #fff;
 $color-bg-default: #33f;
 $font-default: Arial, Helvetica, sans-serif;
 
+.html {
+    font-size: 62,5%;
+}
+
+
 body {
     background: url('../assets/background.jpg') no-repeat top center;
     background-size: cover;
@@ -17,7 +22,7 @@ h1 {
 
 h2 {
     color: $color-font;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
@@ -34,37 +39,83 @@ h2 {
 }
 
 
-%box{
 
-    display: flex;
+.box__container {
     background: $color-bg-default;
     border-radius: 1rem;
-}
-
-.box-container {
-    @extend %box;
-    flex-direction: row;
+    display: flex;
     padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 2rem auto 4rem;
+    align-items: center;
+    max-width: 500px;
 
-    
+    &--around {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    &--between {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &--evenly{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &--center{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+        height: fit-content;
+    }
+
 }
+
 .box {
     border-radius: 1rem;
     border: 2px solid $color-font;
+    color: #fff;
+    display: flex;
     text-align: center;
-    //margin: 1rem;
-    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    min-width: 10rem;
     height: 10rem;
+    min-height: relative ;
+
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+
+
 }
 
-.box-container2 {
-    @extend %box;
-    flex-direction: row;
-    padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    
+@keyframes slideIn {
+    from {
+        left: -999px;
+        opacity: .1;
+        height: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+        height: 100%;
+    }
 }
