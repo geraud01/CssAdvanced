@@ -4,109 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framework Simulator</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Lance Negócios</title>
 </head>
 <body>
+
+    <!-- <div class="grid">
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div> 
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div> 
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div> 
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+    </div> -->
+
     <div id="root">
         <header>
             <div class="container">
-                <h2>Match Tennis</h2>
-                <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#contato">Contato</a>
+                <h2 class="logo col-1">
+                    <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
+                </h2>
+                <nav class="nav col-4">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#como-funciona">Como funciona</a>
                 </nav>
+                <div class="hero col-12">
+                    <img src="./assets/images/banner-lance-me.png" alt="">
+                    <h1>Veja como acelerar a criação do seu negócio</h1>
+                </div>
             </div>
         </header>
         <section id="sobre">
             <div class="container">
-                <aside>
-                    <div id="localizacao"></div>
-                </aside>
-                <article>
+                <article class="col-12">
                     <h1>Sobre nós</h1>
-                    <p>Bem-vindo!</p>
-
-                    <p>Somos mais do que uma loja de roupas; somos uma expressão de estilo, personalidade e autenticidade. No coração de nossa jornada está a crença de que a moda não é apenas sobre roupas, é sobre contar histórias, celebrar individualidade e criar momentos memoráveis.</p>
-            
-                    <p>Em cada costura, cada textura e cada detalhe, buscamos não apenas oferecer tendências, mas sim uma experiência que celebra a diversidade e a beleza única de cada pessoa. Nossa missão é simplificar a moda, oferecendo uma seleção cuidadosamente curada que se adapte a diferentes estilos, ocasiões e estados de espírito.</p>
-            
-                    <p>Do casual ao sofisticado, do clássico ao contemporâneo, nossas peças são mais do que simples tecidos costurados juntos; são meios de expressão, ferramentas para destacar o melhor de quem você é. Valorizamos a qualidade, o conforto e a atenção aos detalhes, para que cada peça que você escolher transmita não apenas beleza, mas também confiança.</p>
-            
-                    <p>Aqui, não se trata apenas de comprar roupas; é sobre fazer parte de uma comunidade que celebra a diversidade, a criatividade e o poder transformador da moda. Nossa equipe está comprometida em oferecer não apenas produtos, mas também orientação e um atendimento caloroso, buscando proporcionar uma experiência de compra excepcional.</p>
-            
-                    <p>Seja você quem for, onde quer que esteja em sua jornada de estilo, estamos aqui para ser seu parceiro, oferecendo moda que inspira e conecta pessoas ao redor do mundo.</p>
-            
-                    <p>Bem-vindo à MatchPointTennis, onde a moda encontra significado em cada escolha que você faz.</p>
+                    <p>Somos uma equipe especializada na criação visual de marcas, trabalhamos com as principais ferramentas profissionais do mercado para você iniciar um negócio rapidamente.</p>
+                    <p>Veja como funciona nosso processo e nossos produtos disponíveis para nos contratar. E veja a mágica que faremos em poucos dias de trabalho, para você lançar seu negócio em alto estilo.</p>
                 </article>
             </div>
         </section>
         <section id="produtos">
             <div class="container">
-                <h1>Catálogo</h1>
-                <div class="vitrine">
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 1</h3>
-                        <div class="vitrine__image vitrine__image--image">
-                            <div class="box" id="Item01">
-                                <div class="box" id="Item01"></div>
+                <article class="col-12">
+                    <h1>Catálogo</h1>
+                    <div class="vitrine">
+                        <div class="vitrine__item col-12">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-logo.png" alt="Criação de Logo">
                             </div>
+                            <h3 class="vitrine__title">Logo</h3>
+                            <p class="vitrine__desc">Design profissional de logos para você começar</p>
+                            <a href="#produto-logo" class="vitrine__button">Tenho interresse</a>
                         </div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
+                        <div class="vitrine__item col-12">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-timbrado.png" alt="Papel Timbrado">
+                            </div>
+                            <h3 class="vitrine__title">Papel Timbrado</h3>
+                            <p class="vitrine__desc">
+                                Aplicação de identidade visual a seus documentos do dia a dia.
+                            </p>
+                            <a href="#produto-timbrado" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item col-12">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-cartao.png" alt="Cartão de visita">
+                            </div>
+                            <h3 class="vitrine__title">Cartão de visita</h3>
+                            <p class="vitrine__desc">
+                                Layout do seu cartão de visita com aquele toque profissional.   
+                            </p>
+                            <a href="#produto-cartao" class="vitrine__button">Tenho interesse</a>
+                        </div>
+                        <div class="vitrine__item col-12">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-site.png" alt="Site institucional">
+                            </div>
+                            <h3 class="vitrine__title">Site institucional</h3>
+                            <p class="vitrine__desc">
+                                Desenvolvimento de site com a sua identidade visual aplicada.
+                            </p>
+                            <a href="#produto-site" class="vitrine__button">Tenho interesse</a>
+                        </div>
                     </div>
-
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 2</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 3</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 4</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 5</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 6</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                </div>
+                </article>
             </div>
         </section>
-        <section id="contato">
+
+        <section id="como-funciona">
             <div class="container">
-                <h1>Contato</h1>
-                <form class="contato">
-                    <input type="text" placeholder="Nome" class="contato__input">
-                    <input type="text" placeholder="Email" class="contato__input">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <article class="col-12">
+                    <h1>Como funciona</h1>
+                    <div class="steps">
+                        <div class="steps__item col-5">
+                            <img src="./assets/images/escolha.png" alt="Escolha seu lance">
+                            <h3>Escolha seu lance</h3>
+                        </div>
+                        <div class="steps__item col-5">
+                            <img src="./assets/images/lance.png" alt="Pague o item escolhido">
+                            <h3>Lance seu pagamento</h3>
+                        </div>
+                        <div class="steps__item col-5">
+                            <img src="./assets/images/trabalhamos.png" alt="Trabalhamos">
+                            <h3>Após a confirmação do pagamento, iniciamos os trabalhos.</h3>
+                        </div>
+                        <div class="steps__item col-5">
+                            <img src="./assets/images/voce-aprova.png" alt="Você aprova">
+                            <h3>Em poucos dias você recebará o trabalho pronto para avaliar.</h3>
+                        </div>
+                        <div class="steps__item col-5">
+                            <img src="./assets/images/lancamos.png" alt="Lance seu negócio">
+                            <h3>Se estiver tudo ok para você, você lança seu negócio <span>=</span></h3>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
         <footer>
             <div class="container">
-                <p>Match Tennis &copy; Todos os direitos reservados. <br>
-                <small>Desenvolvido por Geraud Oliveira</small></p>
+                <p class="col-12">&copy; Todos os direitos reservados. <br>
+                <small>Desenvolvido por <a href="https://github.com/geraud01">Geraud</a>.</small></p>
             </div>
         </footer>
     </div>
