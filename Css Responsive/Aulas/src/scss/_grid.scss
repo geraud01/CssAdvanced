@@ -19,8 +19,17 @@
     }
 }
 
+/* Estilos para tablet (largura menor que 768 pixels) */
 @media (min-width: 768px) and (max-width: 1199px) {
     [class*="col-" ] {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+/* Estilos para smartphones (largura menor que 768 pixels) */
+@media (max-width: 767px) {
+    [class*="col-"] {
         padding-left: 4rem;
         padding-right: 4rem;
     }
