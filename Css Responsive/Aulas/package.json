@@ -9,16 +9,16 @@
     "dev": "webpack serve --stats-children --live-reload --open --mode development"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cavalcantemmarcelo/webpack.git"
+    "type": "",
+    "url": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "Geraud Oliveira",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cavalcantemmarcelo/webpack/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/cavalcantemmarcelo/webpack#readme",
+  "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
